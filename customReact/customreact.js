@@ -16,7 +16,7 @@ function customRender(reactElement, container){
     }
     container.appendChild(domElement)
 }
-
+//it's work ,due to we have created and we know how to extract imformation 
 const reactElement = {
     type: 'a',
     props: {

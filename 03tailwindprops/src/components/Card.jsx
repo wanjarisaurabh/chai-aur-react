@@ -1,7 +1,8 @@
 import React from 'react'
 
-function Card({username, btnText="visit me"}) {
+function Card({username, btnText="visit me"} , props) {
     console.log(username);
+    console.log(props)
   return (
     <div className="relative h-[400px] w-[300px] rounded-md ">
   <img
