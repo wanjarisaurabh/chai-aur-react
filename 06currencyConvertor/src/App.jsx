@@ -10,7 +10,9 @@ function App() {
   const [to, setTo] = useState("inr")
   const [convertedAmount, setConvertedAmount] = useState(0)
 
-  const currencyInfo = useCurrencyInfo(from)
+  const currencyInfo = useCurrencyInfo(from)//custome hook
+
+  
 
   const options = Object.keys(currencyInfo)
 
@@ -20,11 +22,13 @@ function App() {
     setConvertedAmount(amount)
     setAmount(convertedAmount)
   }
-  
+
+
   const convert = () => {
     setConvertedAmount(amount * currencyInfo[to])
   }
 
+  
   return (
     <div
         className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
