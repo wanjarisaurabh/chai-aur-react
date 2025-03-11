@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Children } from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
@@ -31,6 +31,8 @@ import Github, { githubInfoLoader } from './components/Github/Github.jsx'
 //   }
 // ])
 
+
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
@@ -47,8 +49,9 @@ const router = createBrowserRouter(
   )
 )
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <RouterProvider router={router} /> //wrapper 
   </React.StrictMode>,
 )

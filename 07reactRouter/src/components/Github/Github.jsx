@@ -22,6 +22,10 @@ function Github() {
 
 export default Github
 
+
+//which can call from loader 
+//loader execute while hovering over it 
+//nt prefer to swrite the func here 
 export const githubInfoLoader = async () => {
     const response = await fetch('https://api.github.com/users/hiteshchoudhary')
     return response.json()
