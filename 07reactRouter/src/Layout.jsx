@@ -7,7 +7,7 @@ function Layout() {
   return (
     <>
     <Header/>
-    <Outlet /> //which will replace wiht children
+    <Outlet /> //which will replace with children
     <Footer />
     </>
   )

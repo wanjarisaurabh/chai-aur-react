@@ -7,8 +7,10 @@ import TodoItem from './components/TodoItem'
 function App() {
   const [todos, setTodos] = useState([])
 
+  //if we use the same name as per the contex then all the functionalities is comee in this also. ...
   const addTodo = (todo) => {
     setTodos((prev) => [{id: Date.now(), ...todo}, ...prev] )
+  
   }
 
   const updateTodo = (id, todo) => {
